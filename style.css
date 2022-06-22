@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  margin-top: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  display: inline;
+  list-style: none;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  float: right;
+}
+
+li {
+  display: block;
+  margin: 0.5rem;
+  text-align: center;
+}
+ul li a {
+  color: grey;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+}
+ul li a:hover {
+  color: red;
+}
+
+ul .ham {
+  color: gray;
+  display: block;
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: rgb(80, 59, 27);
+}
+
+ul .ham i {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  /* margin-right: 1rem; */
+}
+
+h3 {
+  color: hsl(315, 69%, 54%);
+}
+.first-nft h1 {
+  color: black;
+}
+h1 {
+  width: 60%;
+}
+p {
+  width: 70%;
+}
+.btn-Sign-Up {
+  background-color: white;
+  border: 4px solid orange;
+  border-radius: 40%;
+  padding: 16px;
+}
+.btn-Sign-Up:hover {
+  background-color: pink;
+}
+.pink-logo {
+  height: 50%;
+}
+
+.logos-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+}
+
+.logos-bar img {
+  width: 120px;
+}
+.nft-items {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.card-content {
+  background-color: rgb(236, 232, 232);
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: -1.2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+h5 {
+  color: orange;
+  /* font-size: 15px; */
+}
+
+.gray-text {
+  color: grey;
+}
+
+.openSea {
+  color: black;
+}
+footer {
+  margin-top: 1rem;
+  display: flex;
+}
+.brands {
+  color: gray;
+  display: inline-block;
+  width: auto;
+}
+ul li i {
+  display: inline-block;
+}
+.footer-text {
+  color: gray;
+}
+a {
+  text-decoration: none;
+  color: gray;
+}
+/* Maži įrenginiai */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  nav ul li a .ham {
+    display: inline-block;
+  }
+  .ham {
+    float: right;
+  }
+  .bar-link {
+    display: none;
+  }
+  .pink-logo {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    right: -130px;
+    top: 50px;
+  }
+  .green-nft {
+    position: absolute;
+    width: 120px;
+    right: -20px;
+    top: 1580px;
+  }
+  .last-logo {
+    display: none;
+  }
+  .colored {
+    width: 150%;
+  }
+  .text-colored-bar {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    float: left;
+  }
+  hr {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .first-footer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  h3 {
+    margin: 1rem;
+  }
+}
+
+/* dideli įrenginiai */
+@media only screen and (min-width: 769px) {
+  .main {
+    display: flex;
+  }
+  .bar-link {
+    display: inline-block;
+  }
+  ul .ham {
+    display: none;
+  }
+  .sign {
+    color: rgb(202, 18, 49);
+  }
+  .first-nft {
+    float: left;
+  }
+
+  .text-colored-bar {
+    position: absolute;
+    left: 10%;
+    top: 140%;
+    float: left;
+  }
+
+  .pink-logo {
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    float: right;
+    right: -30%;
+    top: -10%;
+  }
+  .colored {
+    width: 150%;
+  }
+  .green-nft {
+    position: absolute;
+    width: 120px;
+    right: 400px;
+    top: 2555px;
+  }
+  hr {
+    width: 150%;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  h3 {
+    margin: 1rem;
+  }
+}
